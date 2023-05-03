@@ -1,0 +1,600 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* barra de navegacion */
+
+.navbar{
+    padding: 0%;  
+}
+.container-fluid{
+    background-color: rgb(67, 67, 67);  
+    display: flex;
+}
+.navbar-brand{
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+    font-size: 18px;    
+}
+.container-fluid ul{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 14px;
+}
+.container-fluid ul li a:hover{
+    font-size: 16px;
+    color:rgb(42, 180, 42);
+    transition: .5s;
+}
+.nav-link.active {
+    color: white;
+}
+.nav-link.disabled{
+    color: rgb(123, 123, 124);
+}
+
+/* galeria de fotos-carousel */
+
+.carousel{
+    background-color: black;
+}
+.carousel-caption{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+}
+.carousel-caption h5{
+    font-size: 35px;
+    line-height: 2;
+}
+.carousel-caption p{
+    font-size: 20px;
+}
+.carousel div div div button{
+    margin-bottom: 10px;
+    width: 30vh;
+}
+
+/* intermedia */
+
+.textos{
+    text-align: center;
+}
+.textos h5{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.textos h5 a{
+    color: black;
+    text-decoration-line:underline;
+}
+
+/* Cards */
+
+.cartas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 25px;
+
+    transition: 2s;     
+}
+.cartas div{
+    margin-right: 30px;
+}
+.card-title{
+    padding-top: 5px;
+    text-align: left;
+}
+.card-text{
+    font-size: 15px;
+    text-align: justify;
+}
+
+ /* foto + texto */
+
+.honolulu div div div{
+    background-color:rgb(63, 62, 62);
+    color: white;
+    flex-flow: row;
+}
+.honolulu div div div div h5{
+    font-size: 25px;
+    line-height: 30px;
+}
+.honolulu div div div div p{
+    font-size: 20px;
+    line-height: 25px;
+}
+/* Form */
+
+.formulario{
+    display: flex;
+    flex-flow: column;
+    margin: 30px;
+    align-items: center;
+}
+.formulario .col{
+    flex-flow: nowrap;
+    width: 25rem;
+}
+.formulario .mb-3{
+    margin-top: 20px;
+    font-size: 15px;
+    width: 50rem;   
+}
+.formulario div label{
+    color: rgb(131, 131, 131);
+}
+.formulario div .btn{
+    
+    background:greenyellow;
+    width: 50rem;
+    border-color: white;
+}
+
+/* pie de pagina */
+
+.nav-bg{
+    background: rgb(34, 76, 91);
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.navegacion-principal a{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;;
+    color: white;
+    font-size: 14px;
+    line-height: 50px;
+    text-decoration: none;  
+    transition-duration: 1s;   
+}
+.navegacion-principal a:hover{
+    color:rgb(42, 180, 42);
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container-fluid{
+        align-items: center;   
+        margin: 0;
+    }
+    .navbar-brand{
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    } 
+    .container-fluid ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-fluid ul li a{
+        align-items: center;
+        font-size: 15px;
+    }
+    /* galeria de fotos-carousel */
+
+    .carousel-caption{
+        position:static;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .carousel-caption h5{
+        font-size: 20px;
+        line-height: 2;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+    }
+    .carousel div div div button{
+        width: 23vh;
+        margin-bottom: 10px;
+        font-size: 12px;
+        align-content: center;
+    }
+
+    /* imagen+foto */
+
+    .honolulu div div div div h5{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .honolulu div div div div p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .honolulu div div div div .btn{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* form */
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+    .formulario .col{
+        width: 18rem;
+    }
+    .formulario .mb-3{
+        margin-top: 20px;
+        font-size: 10px;
+        width: 36rem;   
+    }
+    label{
+        color: rgb(163, 163, 163);
+    }
+    .formulario div .btn{
+        background:greenyellow;
+        width: 36rem;
+        border-color: white;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* barra de navegacion */
+    
+   .container-fluid{
+       margin: 0;
+   }
+   .navbar-brand{
+       font-size: 20px;
+       justify-content: center;
+       text-align: center;
+   } 
+   .container-fluid ul{
+       width: 100%;
+       flex-direction: row;
+       justify-content: center;
+       text-align: center;
+   }
+   .container-fluid ul li a{
+    align-items: center;
+       font-size: 15px;
+   }
+   /* galeria de fotos-carousel     */
+
+   .carousel-caption{
+       position:static;
+       margin: 20px;
+       justify-content: center;
+       text-align: center;
+   }
+   .carousel-caption h5{
+       font-size: 15px;
+       line-height: 2;
+   }
+   .carousel-caption p{
+       font-size: 10px;
+   }
+   .carousel div div div button{
+       width: 19vh;
+       margin-bottom: 10px;
+       font-size: 10px;
+       align-content: center;
+   }
+
+   /* foto+texto */
+
+   .honolulu div div div div h5{
+       font-size: 15px;
+       line-height: 25px;
+   }
+   .honolulu div div div div p{
+       font-size: 11px;
+       line-height: 18px;
+   }
+   .honolulu div div div div .btn{
+       font-size: 11px;
+       line-height: 18px;
+   }
+
+   /* form */
+
+   .formulario{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 15px;
+   }
+   .formulario .col{
+       width: 18rem;
+   }
+   .formulario .mb-3{
+       margin-top: 20px;
+       font-size: 10px;
+       width: 36rem;   
+   }
+   label{
+       color: rgb(163, 163, 163);
+   }
+   .formulario div .btn{
+       background:greenyellow;
+       width: 36rem;
+       border-color: white;
+   } 
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* barra de navegacion */
+
+    .container-fluid{
+        align-items: center;
+        padding: 15px;   
+        margin: 0;
+    }
+    .navbar-brand{
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    } 
+    .container-fluid ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-fluid ul li a{
+        align-items: center;
+        font-size: 14px;
+    }
+
+    /* galeria de fotos-carousel */
+
+    .carousel-caption{
+        position:static;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .carousel-caption h5{
+        font-size: 15px;
+        line-height: 2;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    .carousel div div div button{
+        width: 19vh;
+        margin-bottom: 10px;
+        font-size: 10px;
+        align-content: center;
+    }
+
+    /* foto+texto */
+
+    .honolulu div div div div h5{
+        font-size: 13px;
+        line-height: 30px;
+    }
+        .honolulu div div div div p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .honolulu div div div div .btn{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* form */
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+    .formulario .col{
+        width: 15rem;
+    }
+    .formulario .mb-3{
+        margin-top: 20px;
+        font-size: 12px;
+        width: 30rem;   
+    }
+    label{
+        color: rgb(163, 163, 163);
+    }
+    .formulario div .btn{
+        background:greenyellow;
+        width: 30rem;
+        border-color: white;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 575.98px) {
+
+    /* barra de navegacion */
+
+    .container-fluid{
+        align-items: center;   
+        margin: 0;
+    }
+    .navbar-brand{
+        font-size: 16px;
+        align-content: center;
+        text-align: center;
+    } 
+    .container-fluid ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-fluid ul li a{
+        align-items: center;
+        font-size: 13px;
+    } 
+
+    /* galeria de fotos-carousel */
+
+    .carousel-caption{
+        position:static;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .carousel-caption h5{
+        font-size: 15px;
+        line-height: 2;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    .carousel div div div button{
+        width: 19vh;
+        margin-bottom: 10px;
+        font-size: 10px;
+        align-content: center;
+    }
+
+    
+    /* foto+texto */
+
+    .honolulu div div div div h5{
+        font-size: 13px;
+        line-height: 30px;
+    }
+    .honolulu div div div div p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .honolulu div div div div .btn{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    /* form */
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+    .formulario .col{
+        width: 12rem;
+    }
+    .formulario .mb-3{
+        margin-top: 20px;
+        font-size: 10px;
+        width: 24rem;   
+    }
+    label{
+        color: rgb(163, 163, 163);
+    }
+    .formulario div .btn{
+        background:greenyellow;
+        width: 24rem;
+        border-color: white;
+    }   
+}
+
+@media (max-width: 279px){
+    
+    /* barra de navegacion */
+
+    .container-fluid{
+        align-items: center;
+        padding: 15px;   
+        margin: 0;
+    }
+    .navbar-brand{
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    } 
+    .container-fluid ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-fluid ul li a{
+        align-items: center;
+        font-size: 14px;
+    }
+
+    /* galeria de fotos-carousel */
+
+    .carousel-caption{
+        position:static;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .carousel-caption h5{
+        font-size: 15px;
+        line-height: 2;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    
+    .carousel div div div button{
+        font-size: 10px;
+        margin-bottom: 10px;
+        width: 15vh;
+    }
+
+    /* form */
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+    .formulario .col{
+        width: 6rem;
+    }
+    .formulario .mb-3{
+        margin-top: 20px;
+        font-size: 9px;
+        width: 12rem;   
+    }
+    label{
+        color: rgb(163, 163, 163);
+    }
+    .formulario div .btn{
+        background:greenyellow;
+        width: 12rem;
+        border-color: white;
+    }   
+
+}
