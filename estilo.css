@@ -63,6 +63,11 @@
     margin-bottom: 10px;
     width: 30vh;
 }
+.carousel div div div button a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: 30vh;
+}
 
 /* intermedia */
 
@@ -87,7 +92,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
 
-    transition: 2s;     
+    transition: 2s;  
 }
 .cartas div{
     margin-right: 30px;
